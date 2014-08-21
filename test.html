@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>欢迎来到丘迟的维基世界 - a site build with Vim, Vimwiki and Git</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="退教参考手册">
+    <meta name="author" content="angelife.t@gmail.com">
+ <!-- Le styles -->
+    <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css" />
+    <link rel="Stylesheet" type="text/css" href="./style.css" />
+    
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="./theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="./theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="./theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png">
+
+
+
+
+ </head>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="./index.html">angelife.org</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                          <ul class="nav pull-right">
+                               <li><a href="./index.html"><i class="icon-home"></i>wiki</a></li>
+                          </ul>
+
+
+                          <ul class="nav pull-right">
+                              <li><a href="./archives.html"><i class="icon-book"></i>电子版</a></li>
+                          </ul>
+                          <ul class="nav pull-right">
+                              <li><a href="./archives.html"><i class="icon-edit"></i>blog</a></li>
+                          </ul>
+                          <ul class="nav pull-right">
+                              <li> <a href="./wenda/index.php"><i class="icon-comments"></i>问答社区</a></li>
+                          </ul>
+
+
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+
+        </div><!--/span-->
+
+      <div class="content" id="content">
+
+<h1 id="toc_1">丘迟的维基世界</h1>
+<div class="toc">
+<ul>
+<li><a href="#toc_1">丘迟的维基世界</a>
+<ul>
+<li><a href="#toc_1.0.1">这是什么？</a>
+</ul>
+<li><a href="#toc_1.1">重点推荐</a>
+<ul>
+<li><a href="#toc_1.1.1">原创教程</a>
+</ul>
+<li><a href="#toc_1.2">前端攻城攻略</a>
+<ul>
+<li><a href="#toc_1.2.1">知识参考整理</a>
+<li><a href="#toc_1.2.2">小贴士</a>
+<li><a href="#toc_1.2.3">脚本片段</a>
+</ul>
+<li><a href="#toc_1.3">楼主是暴露狂</a>
+<ul>
+<li><a href="#toc_1.3.1">楼主到底是谁？</a>
+</ul>
+<li><a href="#toc_1.4">其他</a>
+<li><a href="#toc_1.5">各种注意</a>
+</ul>
+</ul>
+</div>
+<h3 id="toc_1.0.1">这是什么？</h3>
+<p>
+这里是[<a href="https://twitter.com/ktmud">https://twitter.com/ktmud</a> @ktmud] 的Wiki World。基于<a href="tips/vim/vimwiki-guide.html">Vimwiki</a>搭建的维基世界。一切从简，侧边栏什么就不要了。如果你迷路了，可以看看<a href="SiteMap.html">站点地图</a>。
+</p>
+
+<p>
+<div id="whats-special" class="lesser" style="width: 45em">
+<div class="hd">有什么特别的？</div>
+<div class="cont">
+</p>
+<ol>
+<li>
+本页面完全通过Vim手写，配色也是全凭自己感觉输的数字。
+
+<li>
+用到很多 rgba 和 -webkit-gradient ，所以用 IE 的同学悲剧啦！
+
+<li>
+底部火焰一样的红色边框，充分展示了 border-image 的强大。
+
+<li>
+如果你运气好，应该能看到右上角的自定义Google搜索，马上试一试吧！
+
+<li>
+我觉得那个Table of Contents还是很漂亮的哈（快捷键 Shift + Z 可以显示和隐藏哦）。
+
+<li>
+集成DISQUS评论服务，有啥话请尽管向楼主说。
+
+<li>
+毫无疑问，这个页面在Webkit内核的浏览器里显示效果是最好的（快来试一试[<a href="http://www.google.com/chrome/?hl=zh-CN">http://www.google.com/chrome/?hl=zh-CN</a> Chrome]或[<a href="http://www.apple.com.cn/safari/">http://www.apple.com.cn/safari/</a> Safari]）。
+
+</ol>
+<p>
+</div>
+</div>
+</p>
+
+<p>
+<hr />
+</p>
+<h2 id="toc_1.1">重点推荐</h2>
+<p>
+现在你可以[<a href="http://github.com/ktmud/kwiki/commits/master/">http://github.com/ktmud/kwiki/commits/master/</a> 通过 GitHub ]订阅本站的更新了！只要你愿意，还可以[<a href="http://github.com/ktmud/kwiki/commits/master.atom">http://github.com/ktmud/kwiki/commits/master.atom</a> 点此订阅RSS]！
+</p>
+
+<h3 id="toc_1.1.1">原创教程</h3>
+<ol>
+<li>
+<a href="tips/vim/vimwiki-guide.html">使用vimwiki搭建你自己的维基世界</a>
+
+<li>
+<a href="tips/vim/ways-to-sync-vimwiki.html">自动同步你的 vimwiki 到线上网站</a>
+
+<li>
+<a href="tips/Linux/vps-nginx-webserver.html">在VPS编译安装 nginx + php-fpm 的步骤整理</a>
+
+</ol>
+
+<p>
+<hr />
+</p>
+
+<h2 id="toc_1.2">前端攻城攻略</h2>
+<p>
+楼主目前从事前端开发方面的工作，这个维基里会记录一些<a href="tips/index.html">工作经验的积累</a>。也记录一些需要时常参考的东西。比较重要的内容，会整理成博客，发在[<a href="http://ktmud.com">http://ktmud.com</a> 亲泥巴]这个博客上。
+</p>
+
+<h3 id="toc_1.2.1">知识参考整理</h3>
+<ol>
+<li>
+<a href="ref/http-header.html">深入浅出 http header</a>
+
+<li>
+<a href="ref/encoding-issue.html">有关文件编码的一些常识</a> 
+
+</ol>
+
+<p>
+<a href="ref/index.html">更多...</a>
+</p>
+
+<h3 id="toc_1.2.2">小贴士</h3>
+
+<ul>
+<li>
+<a href="tips/JavaScript.html">JavaScript</a>
+
+<li>
+<a href="tips/CSS.html">CSS</a>
+
+</ul>
+
+<ul>
+<li>
+<a href="tips/Linux.html">Linux</a>
+
+<li>
+<a href="tips/Vim.html">Vim</a>
+
+<li>
+<a href="tips/Git.html">Git</a>
+
+</ul>
+
+<h3 id="toc_1.2.3">脚本片段</h3>
+<p>
+<strong>最新</strong>
+</p>
+
+<p>
+<strong>索引</strong>
+</p>
+<ul>
+<li>
+<a href="snippets/JavaScript.html">JavaScript</a>
+
+<li>
+<a href="snippets/Php.html">Php</a>
+
+</ul>
+
+
+<h2 id="toc_1.3">楼主是暴露狂</h2>
+<p>
+行得正、坐得端，内心强大的人，是不存在隐私的。
+</p>
+
+<pre id="news">
+很好，这里以后就是我最主要的个人主页了。
+</pre>
+
+<p>
+<a href="songs.html">那些让我翩翩起舞的歌</a>
+</p>
+
+
+<h3 id="toc_1.3.1">楼主到底是谁？</h3>
+<p>
+多年以来，一直没有一个叫得顺口的网名，不能不说是一种遗憾啊。姑且还是叫我 丘迟 吧。
+</p>
+
+<ul>
+<li>
+<a href="Blogs.html">各种博客</a>
+
+<li>
+[<a href="http://www.douban.com/people/jyyjcc">http://www.douban.com/people/jyyjcc</a> 豆瓣]
+
+<li>
+[<a href="http://www.renren.com/hereyes">http://www.renren.com/hereyes</a> 人人]
+
+</ul>
+
+<p>
+<hr>
+</p>
+<h2 id="toc_1.4">其他</h2>
+<ul>
+<li>
+<a href="Links.html">友情链接</a>
+
+<li>
+<a href="ReadIt.html">阅读推荐</a>
+
+</ul>
+
+<h2 id="toc_1.5">各种注意</h2>
+<ul>
+<li>
+本页面支持评论，基于[<a href="http://diqus.com">http://diqus.com</a> DISQUS]实现。但DISQUS有时候实在慢得可以，评论输入框里居然还有iframe。各位如果恰巧不幸赶上DISQUS抽风，又正好想留言的话，还望多一点耐心。
+
+<li>
+当然，在 IE 这个很戳的浏览器里是不能评论的。
+
+<li>
+右上角搜索的结果还不完全。这是Google对本站索引太慢造成的。如果你希望有更强力的搜索，就赶快给俺加个友链吧！
+
+</ul>
+
+      </div>
+
+      <div id="gsc-result"></div>
+      <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"angelife"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+      <hr>
+
+      <footer>
+        <address id="about">
+angelife.org
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./theme/js/jquery-1.7.2.min.js"></script>
+    <script src="./theme/js/bootstrap.min.js"></script>
+    <script src="./vimwiki.js" type="text/javascript"></script>
+    
+  </body>
+</html>
