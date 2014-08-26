@@ -10,7 +10,7 @@ html {
 body {
     max-width: 1200px;
     position: relative;
-    margin: 0px auto 0px;
+    margin: 0 auto 0;
     font: 100 14px/1.5 "Trebuchet MS", Helvetica, SimSun, sans-serif;
 }
 
