@@ -97,12 +97,16 @@ function baidusearch () {
 
 var wd=document.getElementsByName("wd")[0].value;
 
-var link="http://www.baidu.com/s?si=www.angelife.org&cl=3&ct=2097152&tn=baidulocal&word="+wd;
+var link="http://www.baidu.com/s?si=angelife.org&cl=3&ct=2097152&tn=baidulocal&word="+wd;
 
 window.open(link); }
 
 </script>
-<i class="fa fa-plus-square"></i><input type="text" name="wd"/><input type="submit" onclick="javascript:baidusearch()" value="搜索" />
+<input type="text" name="wd" autocomplete="off" placeholder="站内搜索">
+<span class="input-group-addon" onclick="javascript:baidusearch()" title="搜索">
+<i class="fa fa-search"></i>
+</span>
+
 
 <!--Baidu站内搜索结束-->
 
