@@ -6,12 +6,15 @@ html {
     padding: 0;
     margin: 0;
 }
+
 body {
     max-width: 1200px;
     position: relative;
-    margin: 40px auto 15px;
+    margin: 0px auto 0px;
     font: 100 14px/1.5 "Trebuchet MS", Helvetica, SimSun, sans-serif;
 }
+
+
 p, ul, li, table {
     margin: 0;
     padding: 0;
